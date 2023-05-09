@@ -51,7 +51,7 @@ There is 1 main function of this API: To Save and Load a list of data.
 
 Within the API there are two method calls you can use:
 
-1) /get_data - Returns a JSON file from the JSON file within the API. 
+1) /data_get - Returns a JSON file from the JSON file within the API. 
 2) /data_save - Saves a passed list to the API's JSON file.
 
 An example of the code needed to sucessfully save a list to the API is as follows:
