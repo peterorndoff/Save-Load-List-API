@@ -42,6 +42,8 @@ Python must be installed along with the following modules:
 
 If you run into trouble, make sure your modules are downloaded correctly and that you have the updated version of Python.
 
+In the application you're using to call the API you need to import these modules: requests, json.
+
 <!-- USAGE EXAMPLES -->
 ## Communication Contract
 
