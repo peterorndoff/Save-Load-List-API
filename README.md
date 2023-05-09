@@ -45,7 +45,7 @@ If you run into trouble, make sure your modules are downloaded correctly and tha
 In the application you're using to call the API you need to import these modules: requests, json.
 
 <!-- USAGE EXAMPLES -->
-## Communication Contract
+## Usage
 
 There is 1 main function of this API: To Save and Load a list of data.
 
@@ -78,7 +78,24 @@ If you request the data, the response variable will be assigned with the JSON fi
 
 
 <!-- CONTRIBUTING -->
-## Contributing
+## Communication Contract
+
+Tyler Sphar
+Peter Orndoff
+CS 361
+
+
+5 ground rules for teamwork:
+
+We will communicate via Discord DM’s and, if necessary, voice chat.
+
+Expectation for responsiveness is ASAP for DM’s. Otherwise, within 24 hours.
+
+Our highest priority is meeting the full requirements of assignments by or ahead of the deadline, with partner work being prioritized before individual work.
+
+We will regularly discuss projects via DM’s, and set regular meeting times if it becomes necessary.
+
+We will be transparent and communicate about any issues that come up which cause need for extra help/put us behind schedule/etc. We will add more ground rules if necessary.
 
 
 <!-- LICENSE -->
