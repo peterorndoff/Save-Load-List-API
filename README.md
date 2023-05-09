@@ -60,14 +60,14 @@ test_list = [1,2,3,4,5]
 
         json_data = json.dumps(test_list)
         headers = {'Content-Type': 'application/json'}
-        response = requests.get('http://127.0.0.1:5000/data_get', data=json_data, headers=headers).json()
+        response = requests.post('http://127.0.0.1:5000/data_save', data=json_data, headers=headers).json()
 
 In this example the test_list is being converted to a JSON format, and then an HTTPS requests is being made
-to "http://127.0.0.1:5000/data_get". This is the IP address of the API. The important part of this request is the .get and the /data_get URL which tells the requests method that you're sending information and where to send it. e.g saving and sending the list to the API.
+to "http://127.0.0.1:5000/data_save". This is the IP address of the API. The important part of this request is the .get and the /data_get URL which tells the requests method that you're sending information and where to send it. e.g saving and sending the list to the API.
 
-If I wanted to load that same list I would change the .get to .post and the url to /data_save in the response variable to the following:
+If I wanted to load that same list I would change the .post to .get and the url to /data_get in the response variable to the following:
 
-        response = requests.post('http://127.0.0.1:5000/data_save', data=json_data, headers=headers).json()
+        response = requests.post('http://127.0.0.1:5000/data_get', data=json_data, headers=headers).json()
 
 If you request the data, the response variable will be assigned with the JSON file!
 
