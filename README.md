@@ -51,9 +51,9 @@ There is 1 main function of this API: To Save and Load a list of data.
 
 Within the API there are three method calls you can use:
 
-1) /data - prints out the contents of the JSON API file in the terminal.
+1) /data - location of data in HTML address.
 2) /get_data - Returns a JSON file from the JSON file within the API. 
-3) /save_data - Saves a passed list to the API's JSON file.
+3) /data_save - Saves a passed list to the API's JSON file.
 
 An example of the code needed to sucessfully save a list to the API is as follows:
 
@@ -64,15 +64,11 @@ test_list = [1,2,3,4,5]
         response = requests.get('http://127.0.0.1:5000/data_get', data=json_data, headers=headers).json()
 
 In this example the test_list is being converted to a JSON format, and then an HTTPS requests is being made
-to "http://127.0.0.1:5000/data_get". This is the IP address of the API. The important part of this request is the .get which tells the requests method that you're sending information. e.g saving the list to the API.
+to "http://127.0.0.1:5000/data_get". This is the IP address of the API. The important part of this request is the .get and the /data_get URL which tells the requests method that you're sending information and where to send it. e.g saving and sending the list to the API.
 
-If I wanted to load that same list I would change the .get to .post in the response variable to the following:
+If I wanted to load that same list I would change the .get to .post and the url to /data_save in the response variable to the following:
 
-        response = requests.post('http://127.0.0.1:5000/data_get', data=json_data, headers=headers).json()
-
-If I wanted to see what the API's JSON file contents are I would the .post to .get:
-
-        response = requests.get('http://127.0.0.1:5000/data', data=json_data, headers=headers).json()
+        response = requests.post('http://127.0.0.1:5000/data_save', data=json_data, headers=headers).json()
 
 If you request the data, the response variable will be assigned with the JSON file!
 
