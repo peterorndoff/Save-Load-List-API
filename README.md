@@ -56,7 +56,7 @@ Within the API there are two method calls you can use:
 
 An example of the code needed to sucessfully save a list to the API is as follows:
 
-test_list = [1,2,3,4,5]
+        test_list = [1,2,3,4,5]
 
         json_data = json.dumps(test_list)
         headers = {'Content-Type': 'application/json'}
